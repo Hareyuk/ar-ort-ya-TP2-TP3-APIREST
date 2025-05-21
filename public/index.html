@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP3 de TP2 ORT - Biblioteca</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="parent-backgrounds">
+        <div class="el">
+        </div>
+        <div class="container">
+            <div>
+                <h1>Librería</h1>
+                <p>
+                    En esta biblioteca encontrarás casi todos los contenidos que ofrece el instituto técnico ORT Argentina.
+                </p>
+            </div>
+            <div>
+
+                <h2>Ingreso de libro</h2>
+                
+                <form action="/api/libros" method="post">
+                    <div>Título<input type="text" name="title"></div>
+                    <div>Autor<input type="text" name="author"></div>
+                    <div>Precio<input type="number" name="price"></div>
+                    <div>Stock<input type="number" name="stock"></div>
+                    <button>Enviar</button>
+                </form>
+            </div>  
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

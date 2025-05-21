@@ -1,0 +1,138 @@
+* {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    color: #d34df5;
+}
+
+.container
+{
+    font-size: 1.2em;
+}
+
+body
+{
+    background-color: #1a0d41;
+}
+
+.roboto-text {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container > div
+{
+    width: 30%;
+    place-items: center;
+    background: linear-gradient(315deg, rgba(32, 7, 126, 0.139), #2d1bd1);
+    padding: 2em;
+    border-radius: 1.4em;
+}
+
+form
+{
+    width: 80%;
+    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+form div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+form input
+{
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: #d34df5 1px solid;
+    background-color: transparent;
+    color: white;
+}
+
+form button
+{
+    padding: 1em;
+    border-radius: 0.5em;
+    border: #d34df5 1px solid;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover
+{
+    background-color: #d34df5;
+    color: black;
+}
+
+.el
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    mix-blend-mode: screen;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+/* FONDO IMPORTADO DE https://codepen.io/jh3y/pen/ExrWxyE */
+@font-face {
+  font-family: "Geist";
+  src: url("https://assets.codepen.io/605876/GeistVF.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --size: 20px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: hsl(0 0% 6%);
+}
+
+.el {
+  background: conic-gradient(from 180deg at 50% 70%,rgb(107, 100, 211) 0deg,#d13ad1 72.0000010728836deg,#4bacec 144.0000021457672deg,#50e6d9 216.00000858306885deg,#4dffbf 288.0000042915344deg,hsla(0,0%,98%,1) 1turn);
+  width: 100%;
+  height: 100%;
+  mask:
+    radial-gradient(circle at 50% 50%, rgb(100, 174, 223) 2px, transparent 2.5px) 50% 50% / var(--size) var(--size),
+    url("https://assets.codepen.io/605876/noise-mask.png") 256px 50% / 256px 256px;
+  mask-composite: intersect;
+  animation: flicker 20s infinite linear;
+}
+
+@keyframes flicker {
+  to {
+    mask-position: 50% 50%, 0 50%;
+  }
+}
